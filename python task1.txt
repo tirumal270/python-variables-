@@ -1,0 +1,63 @@
+#int
+
+i=10
+print(i)
+print(type(i))
+
+#float
+
+f=10.3
+print(f)
+print(type(f))
+
+#string
+
+s="tirumal"
+print(s)
+print(type(s))
+
+# Boolean
+
+a=10
+b=5
+c=a>b
+print(c)
+print(type(c))
+
+
+## swap two values using def
+
+def swap(a,b):
+    a,b=b,a
+    return a,b
+print(swap(5,10))
+
+
+## calculator using variable and operatiros
+
+n1=int(input("enter value  :"))
+n2=int(input("enter value  :"))
+operator=input ("enter operator(+,-,*,%)  :")
+if operator=="+":
+    print(n1+n2)
+elif operator=="-":
+    print(n1-n2)
+elif operator=="*":
+    print(n1*n2)
+elif operator=="%":
+    print(n1%n2)
+
+
+## use of variable scope by creating nested fun
+def outer():
+    x=5
+    def inner():
+        nonlocal x
+        x=10
+    inner()
+    print(x)
+outer()
+
+
+ 
+
